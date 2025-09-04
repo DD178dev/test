@@ -1,0 +1,7 @@
+h2 {
+  font-size: 2rem;
+  color: #ff00ff;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ff00ff;
+  display: inline-block;
+}

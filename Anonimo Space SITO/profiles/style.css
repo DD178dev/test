@@ -1,0 +1,126 @@
+:root {
+    --bg-color: #110A1A;
+    --card-bg-color: #1C102A;
+    --neon-purple: #9a42ff;
+    --neon-pink: #eb20a6;
+    --text-color: #e0e0e0;
+    --error-color: #ff5277;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#login-form, #user-profile {
+    background-color: var(--card-bg-color);
+    padding: 2.5em;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 30px var(--neon-purple);
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid var(--neon-purple);
+}
+
+h2 {
+    color: var(--neon-pink);
+    text-align: center;
+    margin-bottom: 1em;
+    text-shadow: 0 0 5px var(--neon-pink);
+}
+
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1.2em;
+    border-radius: 8px;
+    border: 1px solid var(--neon-purple);
+    background-color: var(--card-bg-color);
+    color: var(--text-color);
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--neon-pink);
+    box-shadow: 0 0 5px var(--neon-pink);
+}
+
+button {
+    background-color: var(--neon-purple);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px var(--neon-purple);
+}
+
+button:hover {
+    background-color: var(--neon-pink);
+    box-shadow: 0 0 15px var(--neon-pink);
+}
+
+.error {
+    color: var(--error-color);
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 3px var(--error-color);
+}
+
+#user-profile {
+    max-width: 600px;
+}
+
+#user-profile p {
+    margin-bottom: 0.8em;
+    font-size: 1.1em;
+}
+
+#user-profile strong {
+    color: var(--neon-pink);
+}
+
+#user-profile a {
+    text-decoration: none;
+    color: var(--neon-purple);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#user-profile a:hover {
+    color: var(--neon-pink);
+}
+
+#user-awards {
+    list-style: none;
+    padding: 0;
+}
+
+#user-awards li {
+    background-color: rgba(154, 66, 255, 0.2);
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+/* Ottimizzazione per mobile */
+@media (max-width: 600px) {
+    #login-form, #user-profile {
+        padding: 1.5em;
+    }
+}

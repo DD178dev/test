@@ -1,0 +1,89 @@
+/* Reset base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d0d0d;
+  color: white;
+}
+
+/* Sezione Chi Siamo */
+.about {
+  padding: 50px;
+  text-align: center;
+  background-color: #0d0d0d;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  color: #ff00ff;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ff00ff;
+  display: inline-block;
+}
+
+.about p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 15px auto;
+  line-height: 1.6;
+}
+
+/* Sezione Team */
+.team {
+  padding: 50px;
+  text-align: center;
+  background-color: #0d0d0d;
+}
+
+.team h2 {
+  font-size: 2rem;
+  color: #ff00ff;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ff00ff;
+  display: inline-block;
+}
+
+.team ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.team li {
+  background: linear-gradient(90deg, #4B0082, #0000FF);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px #4B0082;
+}
+
+.team li:hover {
+  transform: scale(1.05);
+}
+
+.team img {
+  height: 40px;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .team ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team li {
+    width: 80%;
+  }
+
+  .about p {
+    padding: 0 20px;
+  }
+}

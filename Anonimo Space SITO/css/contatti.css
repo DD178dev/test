@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f0f0f;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+/* Container principale */
+.contatti {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #1a001f;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(138, 43, 226, 0.3);
+  border: 1px solid #8a2be2;
+}
+
+/* Titolo */
+.contatti h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #c084fc;
+  text-shadow: 0 0 10px #8a2be2;
+  text-align: center;
+}
+
+/* Paragrafo introduttivo */
+.contatti p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  color: #d9b3ff;
+  text-align: center;
+}
+
+/* Form */
+.form-contatto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-contatto input,
+.form-contatto textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  background-color: #2a0033;
+  color: #fff;
+  box-shadow: inset 0 0 5px #8a2be2;
+  transition: box-shadow 0.3s ease;
+}
+
+.form-contatto input:focus,
+.form-contatto textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px #c084fc;
+}
+
+/* Pulsante */
+.form-contatto button {
+  padding: 12px;
+  background: linear-gradient(45deg, #8a2be2, #c084fc);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px #c084fc;
+}
+
+.form-contatto button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #c084fc;
+}
+
+/* Sezione Social */
+.info-social {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.info-social h2 {
+  color: #c084fc;
+  margin-bottom: 15px;
+  font-size: 1.6em;
+  text-shadow: 0 0 5px #8a2be2;
+}
+
+.info-social ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.info-social li {
+  font-size: 1em;
+  background-color: #2a0033;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(138, 43, 226, 0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.info-social li:hover {
+  background-color: #c084fc;
+  color: #000;
+  transform: scale(1.05);
+}

@@ -1,0 +1,104 @@
+.team-section {
+  background-color: #0d0d0d;
+  padding: 50px 20px;
+  color: #e0b3ff;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.titolo_h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #ff00ff;
+  text-shadow: 0 0 10px #ff00ff;
+  border-bottom: 2px solid #ff00ff;
+  display: inline-block;
+}
+
+.team-category {
+  margin-bottom: 50px;
+}
+
+.team-category h3 {
+  font-size: 1.8em;
+  color: #c084fc;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #8a2be2;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.member-card {
+  background: linear-gradient(135deg, #5800aa, #2b004a);
+  color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  width: 260px;
+  box-shadow: 0 0 20px #5a0f89;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+  transform: scale(1.05);
+
+}
+
+.member-card h4 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #ffccff;
+  text-shadow: 0 0 5px #cc00ff;
+}
+
+.member-card p {
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: #d9b3ff;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.social a {
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(45deg, #8000ff, #cc00ff);
+  box-shadow: 0 0 10px #cc00ff;
+  transition: background 0.3s ease;
+}
+
+.social a:hover {
+  background: linear-gradient(45deg, #cc00ff, #ff66ff);
+}
+
+/* Nasconde social per membri senza social */
+.no-social .social {
+  display: none;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ff00ff;
+  box-shadow: 0 0 15px #ff00ff;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover .profile-pic {
+  transform: scale(1.1);
+}

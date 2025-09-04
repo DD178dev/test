@@ -1,0 +1,34 @@
+[
+  {
+    "email": "utente1@example.com",
+    "password": "password123",
+    "nome_fortnite": "Player1Elite",
+    "nome_discord": "DiscordUser#1234",
+    "ruolo": "Admin",
+    "data_ingresso": "2024-01-15",
+    "earnings": 1500,
+    "stato_account": "Attivo",
+    "piattaforma": "PC",
+    "periferica": "Mouse e Tastiera",
+    "premi": [
+      {
+        "torneo": "Fncs Grand Finals",
+        "posizione": "1°"
+      },
+      {
+        "torneo": "Cash Cup",
+        "posizione": "10°"
+      }
+    ],
+    "note_personali": "Ottimo leader e stratega, perfetto per le decisioni in-game. Prossima sfida: World Cup.",
+    "immagine_scaricabile": "Accounts/immagini/immagine_utente1.png"
+  },
+  {
+    "email": "utente2@example.com",
+    "password": "password456",
+    "nome_fortnite": "GamerX_22",
+    "nome_discord": "UtenteDiscord_22#5678",
+    "ruolo": "Membro",
+    "immagine_scaricabile": "Accounts/immagini/immagine_utente2.png"
+  }
+]

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Profilo Utente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="../index.html">
+        <button>Home</button></a>
+
+    <div id="login-form">
+        <h2>Accedi</h2>
+        <form id="login-validation">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Entra</button>
+            <p id="error-message" class="error"></p>
+        </form>
+    </div>
+
+    <div id="user-profile" class="hidden">
+        <h2>Benvenuto, <span id="user-fortnite"></span></h2>
+        <p><strong>Email:</strong> <span id="user-email"></span></p>
+        <p><strong>Ruolo:</strong> <span id="user-role"></span></p>
+        <p><strong>Nome Discord:</strong> <span id="user-discord"></span></p>
+
+        <hr>
+    <h3>Informazioni Team</h3>
+    <p><strong>Data di ingresso:</strong> <span id="user-join-date"></span></p>
+    <p><strong>Earnings (con il team):</strong> <span id="user-earnings"></span>€</p>
+    <p><strong>Stato dell'account:</strong> <span id="user-status"></span></p>
+
+    <hr>
+    <h3>Informazioni Aggiuntive</h3>
+    <p><strong>Piattaforma di Gioco:</strong> <span id="user-platform"></span></p>
+    <p><strong>Periferica:</strong> <span id="user-peripherals"></span></p>
+
+    <h3>Premi Vinti</h3>
+    <ul id="user-awards"></ul>
+        <hr><hr>
+    <h3>Note Personali</h3>
+    <p id="user-notes"></p>
+
+        <a id="download-button" href="#" download>
+            <button>Scarica la tua immagine</button>
+        </a>
+
+        <button id="logout-button">Esci</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

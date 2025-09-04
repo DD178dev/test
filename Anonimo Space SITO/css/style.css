@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d; /* viola scuro */
+    color: white;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(90deg, #4B0082, #0000FF); /* Viola → Blu */
+    padding: 20px;
+}
+
+.menu-principale ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-principale ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu-principale ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 50px;
+}
+
+#team-logo {
+    width: 350px; /* Dimensione logo */
+    margin: 20px auto;
+    display: block;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+footer {
+    background: linear-gradient(90deg, #4B0082, #0000FF); /* Viola → Blu */
+    padding: 40px;
+}
+
+
+/* MENU SOCIAL */
+.menu-social img {
+    width: 30px;
+}
+
+.menu-social ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu-social {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+    position: fixed;
+    top: 0;
+    right: 0; /* se vuoi anche allinearlo a destra */
+    width: 100%;
+}
+
+.menu-social ul {
+  background-color: rgba(56, 0, 139, 0.7);       /* Colore dello sfondo */
+  border-radius: 50px;             /* Arrotondamento dei bordi */
+  padding: 10px;                   /* Spazio interno attorno all’icona */
+  display: inline-block;           /* Fa sì che il rettangolo si adatti all’icona */
+  transition: transform 0.3s ease;
+}
+
+.menu-social a {
+    text-decoration: none;
+}
+
+#donate-button-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 999;
+}
+
+
+
+
+/*OTTIMIZZAZIONE PER MOBILE*/
+@media (max-width: 768px) {
+  /* RESET BASE */
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  /* HEADER */
+  header {
+    background: linear-gradient(90deg, #4B0082, #0000FF);
+    padding: 20px 10px;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  /* MENU PRINCIPALE */
+  .menu-principale {
+    margin: 15px 0;
+  }
+
+  .menu-principale ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .menu-principale ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  /* LOGO */
+  #team-logo {
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+  }
+
+  /* MENU SOCIAL STICKY */
+  .menu-social {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    position: relative; /* Non fisso, scorre con la pagina */
+    width: 100%;
+  }
+
+  .menu-social ul {
+    border-radius: 50px;
+    padding: 10px;
+    display: inline-flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    transition: transform 0.3s ease;
+  }
+
+  .menu-social ul li {
+    display: inline;
+    margin: 0;
+  }
+
+  .menu-social a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 6px;
+    transition: background-color 0.3s ease;
+  }
+
+  .menu-social a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .menu-social img {
+    width: 30px;
+    height: 30px;
+    display: block;
+  }
+
+
+
+  /* SEZIONE GENERICA */
+  section {
+    padding: 20px 15px;
+  }
+
+  section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  /* MEMBER SCROLL */
+  .member-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .member-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .member-card {
+    min-width: 200px;
+    flex: 0 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 15px;
+    scroll-snap-align: start;
+    text-align: center;
+  }
+
+  /* FOOTER */
+  footer {
+    background: linear-gradient(90deg, #4B0082, #0000FF);
+    padding: 20px 10px;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+
+
+#donate-button-container {
+    bottom: 15px;
+    left: 15px;
+    transform: scale(0.9); /* Riduce leggermente la dimensione */
+  }
+
+  #donate-button img {
+    max-width: 100%;
+    height: auto;
+  }
+}
